@@ -1,0 +1,23 @@
+# Dataset
+data/ravdess-emotional-speech-audio/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Audio files (optional)
+*.wav
