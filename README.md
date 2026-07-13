@@ -1,24 +1,38 @@
-# 🎤 Speech Emotion Recognition
+# 🎤 Speech Emotion Recognition using Machine Learning
 
-## Overview
+A Machine Learning project that automatically detects human emotions from speech signals using audio feature extraction and the **RAVDESS Emotional Speech Dataset**.
 
-This project detects human emotions from speech using Machine Learning and audio signal processing.
-
-The model is trained on the RAVDESS emotional speech dataset using Librosa for feature extraction and a Random Forest classifier for emotion prediction.
+The project extracts MFCC, Chroma, and Mel Spectrogram features from audio recordings and classifies emotions using a **Random Forest Classifier**. It also includes real-time emotion prediction from a microphone and a desktop GUI built with Tkinter.
 
 ---
 
-## Features
+## 📌 Features
 
-- Emotion prediction from WAV files
-- Real-time microphone emotion detection
-- Desktop GUI using Tkinter
-- Audio playback support
-- Machine Learning model trained on RAVDESS dataset
+- 🎙️ Emotion prediction from WAV audio files
+- 🎤 Real-time microphone emotion detection
+- 🖥️ Desktop GUI using Tkinter
+- 🔊 Audio playback support
+- 📊 Feature extraction using Librosa
+- 🤖 Machine Learning model using Random Forest
+- 💾 Pre-trained model included for quick testing
 
 ---
 
-## Technologies Used
+## 🧠 Machine Learning Workflow
+
+1. Load audio dataset
+2. Extract audio features
+   - MFCC
+   - Chroma Features
+   - Mel Spectrogram
+3. Create feature dataset
+4. Train Random Forest classifier
+5. Save trained model
+6. Predict emotions from new speech recordings
+
+---
+
+## 🛠️ Technologies Used
 
 - Python
 - Librosa
@@ -28,86 +42,158 @@ The model is trained on the RAVDESS emotional speech dataset using Librosa for f
 - Tkinter
 - Pygame
 - SoundDevice
+- Pickle
 
 ---
 
-## Dataset
+## 📂 Dataset
 
-This project uses the **RAVDESS Emotional Speech Dataset**.
+This project uses the **RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song)** dataset.
 
-The dataset is not included in this repository because of GitHub size limits.
+Due to its size and licensing, the dataset is **not included** in this repository.
 
-Download it from the official source and place it inside:
+Download the dataset from the official RAVDESS source and place it in the following directory:
 
-data/ravdess-emotional-speech-audio/
+```
+data/
+└── ravdess-emotional-speech-audio/
+```
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
-SpeechEmotionRecognition/
-
+```
+speech-emotion-recognition/
+│
 ├── data/
-
+│   └── ravdess-emotional-speech-audio/
+│
 ├── models/
-
+│   ├── emotion_model.pkl
+│   ├── label_encoder.pkl
+│   └── scaler.pkl
+│
 ├── gui_app.py
-
-├── train_model.py
-
-├── predict_emotion.py
-
-├── realtime_emotion.py
-
 ├── main.py
-
-├── README.md
-
+├── train_model.py
+├── predict_emotion.py
+├── realtime_emotion.py
 ├── requirements.txt
-
+├── README.md
 └── .gitignore
+```
 
 ---
 
-## How to Train
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/palakkumain/speech-emotion-recognition.git
+```
+
+Move into the project folder:
+
+```bash
+cd speech-emotion-recognition
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Training the Model
 
 Run:
 
+```bash
 python main.py
+```
 
 or
 
+```bash
 python train_model.py
+```
+
+The trained model will be saved inside the **models** folder.
 
 ---
 
-## How to Predict
+## 🎧 Predict Emotion from an Audio File
 
+```bash
 python predict_emotion.py
+```
 
 ---
 
-## Real-Time Prediction
+## 🎙️ Real-Time Emotion Prediction
 
+```bash
 python realtime_emotion.py
+```
+
+Speak into your microphone and the model will predict your emotion.
 
 ---
 
-## GUI
+## 🖥️ Launch the GUI
 
+```bash
 python gui_app.py
+```
+
+The GUI allows users to:
+
+- Browse WAV files
+- Play audio
+- Detect emotions
+- Display prediction results
 
 ---
 
-## Future Improvements
+## 📊 Model
 
-- Deep Learning using CNN/LSTM
+**Algorithm:** Random Forest Classifier
+
+**Feature Extraction:**
+
+- MFCC
+- Chroma Features
+- Mel Spectrogram
+
+---
+
+## 🔮 Future Improvements
+
+- Deep Learning (CNN + LSTM)
+- Transformer-based Speech Models
 - Streamlit Web Application
-- More datasets
-- Better feature engineering
+- Support for additional datasets
+- Improved feature engineering
+- Model deployment using Flask/FastAPI
 
 ---
 
-## Author
+## 👩‍💻 Author
 
-Palak Kumain
+**Palak Kumain**
+
+BCA (Artificial Intelligence & Data Science)
+
+Graphic Era Hill University
+
+GitHub: https://github.com/palakkumain
+
+---
+
+## ⭐ If you found this project useful
+
+Please consider giving this repository a ⭐ on GitHub.

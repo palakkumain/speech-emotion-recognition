@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 import pickle
 
 #  Folder name
-DATA_PATH = "ravdess-emotional-speech-audio"
+DATA_PATH = "data/ravdess-emotional-speech-audio"
 
 # Emotion mapping
 emotion_map = {

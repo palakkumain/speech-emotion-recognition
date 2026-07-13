@@ -6,11 +6,11 @@ import tempfile
 import scipy.io.wavfile as wav
 
 #  Load model, encoder, and scaler
-with open("emotion_model.pkl", "rb") as f:
+with open("models/emotion_model.pkl", "rb") as f:
     model = pickle.load(f)
-with open("label_encoder.pkl", "rb") as f:
+with open("models/label_encoder.pkl", "rb") as f:
     encoder = pickle.load(f)
-with open("scaler.pkl", "rb") as f:
+with open("models/scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
 
 def extract_features(file_path):

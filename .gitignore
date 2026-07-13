@@ -1,23 +1,38 @@
+# ===========================
 # Dataset
-data/ravdess-emotional-speech-audio/
+# ===========================
+data/
+ravdess-emotional-speech-audio/
 
-# Python cache
+# Generated files
+features.csv
+
+# ===========================
+# Python
+# ===========================
 __pycache__/
 *.pyc
 
-# Virtual environments
+# ===========================
+# Virtual Environments
+# ===========================
 venv/
 env/
 .venv/
 
-# VS Code
+# ===========================
+# IDE Settings
+# ===========================
 .vscode/
-
-# PyCharm
 .idea/
 
+# ===========================
 # Jupyter
+# ===========================
 .ipynb_checkpoints/
 
-# Audio files (optional)
-*.wav
+# ===========================
+# OS Files
+# ===========================
+.DS_Store
+Thumbs.db
